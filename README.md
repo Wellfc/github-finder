@@ -23,18 +23,22 @@ See DEMO [here](https://github-finder-wellfc.netlify.app/)
 ## Installation
 
 1. Clone the repository:
+
    ```sh
    git clone https://github.com/wellfc/github-finder.git
    cd github-finder
 
 2. Install dependencies:
+
    ```sh
    npm install
 
 ## Environment Variables
 To run this project, you will need to add the following environment variable to your .env file:
-    ```sh
+
+    ```
     REACT_APP_GH_TOKEN=your_github_token
+    ```
 
 ## Usage
 1. Start the development server:
