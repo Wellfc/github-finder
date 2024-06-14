@@ -12,7 +12,6 @@
     --app-green: #42fd92;
     --app-button-color: #7108fd;
     --app-button-hover-color: #6418bc;
-    --app-text-title-color: #00e6e6;
     --app-text-title-hover: #00d2d2;
 }
 
@@ -36,6 +35,7 @@ main {
 }
 
 img {
+    height: 130px;
     width: 130px;
     border-radius: 50%;
     text-align: center;
@@ -184,7 +184,7 @@ input[type=submit]:hover, button:hover {
 .repo-div {
     display: flex;
     flex-direction: column;
-    width: 890px;
+    width: 100%;
     background-color: var(--app-medium-gray);
     padding: 20px 25px;
     margin-top: 10px;
@@ -219,4 +219,114 @@ input[type=submit]:hover, button:hover {
 .repo-description {
     font-size: 16px;
     margin-top: 5px;
+}
+
+/*----------------------------------------*/
+/* Media Queries                          */
+/*----------------------------------------*/
+
+@media (max-width: 768px) {
+    img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .container {
+        margin: 20px;
+    }
+
+    input[type=text] {
+        width: 100%;
+        max-width: 350px;
+    }
+
+    .repo-div {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        margin: 10px;
+    }
+
+    input[type=text] {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .repo-description {
+        font-size: 14px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    .repo-info {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 450px) {
+    .container {
+        margin: 5px;
+        width: min(90% - 5px, 100%);
+    }
+
+    input[type=text] {
+        width: 100%;
+        max-width: 250px;
+    }
+
+    .statistics {
+        gap: 10px;
+    }
+
+    .number {
+        font-size: 16px;
+    }
+
+    .subtitle {
+        font-size: 10px;
+    }
+
+    .link {
+        flex-direction: column;
+        place-items: center;
+        gap: 10px;
+    }
+
+    .repositories {
+        place-items: center;
+
+    }
+
+    .repo-div {
+        padding: 10px 15px;
+    }
+
+    .repo-info a {
+        font-size: 14px;
+    }
+
+    .repo-date {
+        font-size: 14px;
+    }
+
+    .repo-description {
+        font-size: 12px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
 }
