@@ -36,9 +36,7 @@ See DEMO [here](https://github-finder-wellfc.netlify.app/)
 ## Environment Variables
 To run this project, you will need to add the following environment variable to your .env file:
 
-    ```
     REACT_APP_GH_TOKEN=your_github_token
-    ```
 
 ## Usage
 1. Start the development server:
